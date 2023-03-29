@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="eng">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Car Rental</title>
+    
+    <link rel="stylesheet" href="../../styles/style.css" />
+</head>
+    
+<body>
+    <header>
+        <h1>Car Rental</h1>
+        <img src="../../images/logo.png" alt="Car Rental" style="width:150px;height:150px;">
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="../index.html" >Main Page</a></li>
+            <li><a href="../customers/customers-list.html">Customers</a></li>
+            <li><a href="cars-list.html" class="active">Cars</a></li>
+            <li><a href="../rental/rental-list.html">Rentals</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h2>New Car</h2>
+        
+        <form class="form">
+            <label for="car_model">Car Model:<abbr title="required" aria-label="required">*</abbr></label>
+            <input type="text" name="car_model" id="car_model" placeholder="Renault Captur" required>
+            <span id="errorCar_model" class="errors-text"></span>
+            
+            <label for="VIN">VIN:<abbr title="required" aria-label="required">*</abbr></label>
+            <input type="text" name="VIN" id="VIN" placeholder="1GBJG31U561151054" required>
+            <span id="errorVIN" class="errors-text"></span>
+            
+            <label for="manufactured">Manufactured:<abbr title="required" aria-label="required">*</abbr></label>
+            <input type="text" name="manufactured" id="manufactured" placeholder="French automaker Renault" required>
+            <span id="errorManufactured" class="errors-text"></span>
+           
+            <label for="number_of_cars">Number Of Cars:<abbr title="required" aria-label="required">*</abbr></label>
+            <input type="number" name="number_of_cars" id="number_of_cars" placeholder="30" required>
+            <span id="errorNumber_of_cars" class="errors-text"></span>
+            
+            <label for="color">Color:<abbr title="required" aria-label="required">*</abbr></label>
+            <input type="text" name="color" id="color" placeholder="Blue" required>
+            <span id="errorColor" class="errors-text"></span>
+
+            <label for="manufactured_date">Manufactured Date:<abbr title="required" aria-label="required">*</abbr></label>
+            <input type="date" name="manufactured_date" placeholder="10.10.2006" id="manufactured_date" required>
+            <span id="errorManufactured_date" class="errors-text"></span>
+
+            <span id="errorsSummary" class="errors-text"></span>
+            
+            <div class="form-buttons">
+                <input class="form-button-submit" type="submit" value="Add" />
+                <a class="form-button-cancel" href="cars-list.html">Cancel</a>    
+            </div>
+
+           
+        </form>
+    </main>
+
+
+    <footer>
+        <div>
+            <ul>
+                <ul> Miraç Gülbeyaz, s23239</ul>
+            </ul>
+        </div>
+    
+    </footer>
+</body>
+    
+</html>

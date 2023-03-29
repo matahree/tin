@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="eng">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Car Rental</title>
+    
+    <link rel="stylesheet" href="../../styles/style.css" />
+</head>
+    
+<body>
+    <header>
+        <h1>Car Rental</h1>
+        <img src="../../images/logo.png" alt="Car Rental" style="width:150px;height:150px;">
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="../index.html" >Main Page</a></li>
+            <li><a href="customers-list.html" class="active">Customers</a></li>
+            <li><a href="../cars/cars-list.html" >Cars</a></li>
+            <li><a href="../rental/rental-list.html">Rentals</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h2>New Customer</h2>
+        
+        <form class="form">
+            <label for="name">Name:<abbr title="required" aria-label="required">*</abbr></label>
+            <input type="text" name="name" id="name" placeholder="Brad" required/>
+            <span id="errorName" class="errors-text"></span>
+            
+            <label for="surname">Surname:<abbr title="required" aria-label="required">*</abbr></label>
+            <input type="text" name="surname" id="surname" placeholder="Pitt" required/>
+            <span id="errorSurname" class="errors-text"></span>
+            
+            <label for="address">Adress:<abbr title="required" aria-label="required">*</abbr></label>
+            <input type="text" name="address" id="address" placeholder="Adress1" required/>
+            <span id="errorAddress" class="errors-text"></span>
+            
+            <label for="VIN">VIN:<abbr title="required" aria-label="required">*</abbr></label>
+            <input type="text" name="VIN" id="VIN" placeholder="1GBJG31U561151054" required/>
+            <span id="errorVIN" class="errors-text"></span>
+            
+            <label for="email">Email:<abbr title="required" aria-label="required">*</abbr></label>
+            <input type="text" name="email" id="email" placeholder="example@domain.com" required/>
+            <span id="errorEmail" class="errors-text"></span>
+           
+
+            <span id="errorsSummary" class="errors-text"></span>
+            
+            <div class="form-buttons">
+                <input class="form-button-submit" type="submit" value="Add" />
+                <a class="form-button-cancel" href="customers-list.html">Cancel</a>    
+            </div>
+
+           
+        </form>
+    </main>
+    
+    <footer>
+        <div>
+            <ul>
+                <ul> Miraç Gülbeyaz, s23239</ul>
+            </ul>
+        </div>
+    
+    </footer>
+</body>
+    
+</html>

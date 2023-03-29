@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Car Rental</title>
+
+    <link rel="stylesheet" href="../../styles/style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Car Rental</h1>
+        <img src="../../images/logo.png" alt="Car Rental" style="width:150px;height:150px;">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Main Page</a></li>
+            <li><a href="../customers/customers-list.html">Customers</a></li>
+            <li><a href="../cars/cars-list.html">Cars</a></li>
+            <li><a href="rental-list.html" class="active">Rentals</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>New Rent</h2>
+
+        <form id="rental_form" class="form">
+            <label for="customer">Customer:<abbr title="required" aria-label="required">*</abbr></label>
+            <select name="customers" id="customer" form="rental_form">
+                <option selected="selected">---Choose a customer---</option>
+                <option value="Brad Pitt">Brad Pitt</option>
+                <option value="Angelina Jolie">Angelina Jolie</option>
+            </select>
+            <span id="errorCustomer" class="errors-text">Field is required!</span>
+            <!-- <input type="text" name="customer" id="customer" placeholder="Brad Pitt"/> -->
+
+            <label for="car">Car:<abbr title="required" aria-label="required">*</abbr></label>
+            <select name="cars" id="car" form="rental_form">
+                <option selected="selected">---Choose a car--</option>
+                <option value="Renault Captur">Renault Captur</option>
+                <option value="Audi A3">Audi A3</option>
+            </select>
+            <span id="errorCar" class="errors-text">Field is required!</span>
+            <!-- <input type="text" name="car" id="car" /> -->
+
+            <label for="adress">Adress:<abbr title="required" aria-label="required">*</abbr></label>
+            <input type="text" name="adress" id="adress" placeholder="Adress1" required />
+            <span id="errorAdress" class="errors-text">Field is required!</span>
+
+            <label for="rental_date">Date of Rental:<abbr title="required" aria-label="required">*</abbr></label>
+            <input type="date" name="rental_date" id="rental_date" required />
+            <span id="errorRentalDate" class="errors-text">Field is required!</span>
+
+            <label for="return_date">Date of Return: <abbr title="required" aria-label="required">*</abbr></label>
+            <input type="date" name="return_date" id="return_date" required />
+            <span id="errorReturnDate" class="errors-text">Field is required!</span>
+            <div>
+                <span id="errorsSummary" class="errors-text">Form contains errors!</span>
+            </div>
+            <div class="form-buttons">
+                <input class="form-button-submit" type="submit" value="Add" />
+                <a class="form-button-cancel" href="rental-list.html">Cancel</a>
+            </div>
+
+            <div class="alert">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                All required forms must be filled. 
+              </div>
+        </form>
+    </main>
+
+    <footer>
+        <div>
+            <ul>
+                <ul> Miraç Gülbeyaz, s23239</ul>
+            </ul>
+        </div>
+
+    </footer>
+</body>
+
+</html>

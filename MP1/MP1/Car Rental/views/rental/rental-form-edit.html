@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="eng">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Car Rental</title>
+    
+    <link rel="stylesheet" href="../../styles/style.css" />
+</head>
+    
+<body>
+    <header>
+        <h1>Car Rental</h1>
+        <img src="../../images/logo.png" alt="Car Rental" style="width:150px;height:150px;">
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="../index.html" >Main Page</a></li>
+            <li><a href="../customers/customers-list.html">Customers</a></li>
+            <li><a href="../cars/cars-list.html" >Cars</a></li>
+            <li><a href="rental-list.html" class="active">Rentals</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h2>Edit of Rental</h2>
+        
+        <form id="rental_edit_form" class="form">
+            <label for="customer">Customer:<abbr title="required" aria-label="required">*</abbr></label>
+            <select name="customers" id="customer" form="rental_edit_form" required>
+                <option value="Brad Pitt">Brad Pitt</option>
+                <option value="Angelina Jolie">Angelina Jolie</option>
+            </select>
+            <!-- <input type="text" name="customer" value="Brad Pitt" id="customer" /> -->
+            
+            <label for="car">Car:<abbr title="required" aria-label="required">*</abbr></label>
+            <select name="cars" id="car" form="rental_edit_form" required>
+                 <option value="Renault Captur">Renault Captur</option>
+                <option value="Audi A3">Audi A3</option>
+            </select>
+            <!-- <input type="text" name="car" value="Renault Captur" id="car" /> -->
+            
+            <label for="adress">Adress:<abbr title="required" aria-label="required">*</abbr></label>
+            <input type="text" name="adress" value="Adress1" id="adress" required>
+            
+            <label for="date_out">Date of out:<abbr title="required" aria-label="required">*</abbr></label>
+            <input type="date" name="date_out" value="01.01.2019" id="date_out" required>
+            
+            <label for="date_back">Date of back:<abbr title="required" aria-label="required">*</abbr></label>
+            <input type="date" name="date_back" value="30.02.2019" id="date_back" required>
+            
+            <div class="form-buttons">
+                <input class="form-button-submit" type="submit" value="Add" />
+                <a class="form-button-cancel" href="rental-list.html">Cancel</a>    
+            </div>
+        </form>
+    </main>
+    
+    <footer>
+        <div>
+            <ul>
+                <ul> Miraç Gülbeyaz, s23239</ul>
+            </ul>
+        </div>
+    
+    </footer>
+</body>
+    
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="eng">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Car Rental</title>
+    
+    <link rel="stylesheet" href="../../styles/style.css" />
+</head>
+    
+<body>
+    <header>
+        <h1>Car Rental</h1>
+        <img src="../../images/logo.png" alt="Car Rental" style="width:150px;height:150px;">
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="../index.html" >Main Page</a></li>
+            <li><a href="../customers/customers-list.html">Customers</a></li>
+            <li><a href="cars-list.html" class="active">Cars</a></li>
+            <li><a href="../rental/rental-list.html">Rentals</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h2>Detail of Cars</h2>
+        
+        <form class="form">
+            <label for="car_model">Car Model:</label>
+            <input type="text" name="car_model" value="Renault Captur" id="car_model" disabled />
+            
+            <label for="VIN">VIN:</label>
+            <input type="text" name="VIN" value="1GBJG31U561151054" id="VIN" disabled />
+            
+            <label for="manufactured">Manufactured:</label>
+            <input type="text" name="manufactured" value="French automaker Renault" id="manufactured" disabled />
+          
+            <label for="number_of_cars">Number Of Cars:</label>
+            <input type="number" name="number_of_cars" value="30" id="number_of_cars" disabled />
+
+            <label for="color">Color:</label>
+            <input type="text" name="color" value="Blue" id="color" disabled />
+
+            <label for="manufactured_date">Manufactured Date:</label>
+            <input type="date" name="manufactured_date" value="10.10.2006" id="manufactured_date" disabled />
+            
+            <div>
+                <p><a class="list-actions-button-edit" href="cars-form-edit.html">Edit</a></p>
+            </div>
+        </form>
+        
+        <h2>Rental of Cars</h2>
+        
+        <table class="table-list">
+            <thead>
+                <tr>
+                    <th>Client</th>
+                    <th>Shipping address</th>
+                    <th>Date Out</th>
+                    <th>Date Back</th>
+                </tr>
+            </thead>
+    
+            <tbody>
+                <tr>
+                    <td>Brad Pitt</td>
+                    <td>Adrees1</td>
+                    <td>01.01.2019</td>
+                    <td>30.02.2019</td>
+                </tr>
+                <tr>
+                    <td>Angelina Jolie</td>
+                    <td>Adress2</td>
+                    <td>11.08.2020</td>
+                    <td>25.10.2020</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div>
+            <p><a class="list-actions-button-details" href="cars-list.html">Return</a></p>    
+        </div>
+        
+    </main>
+    
+    <footer>
+        <div>
+            <ul>
+                <ul> Miraç Gülbeyaz, s23239</ul>
+            </ul>
+        </div>
+    
+    </footer>
+</body>
+    
+</html>

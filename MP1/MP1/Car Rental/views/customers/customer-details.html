@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="eng">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Car Rental</title>
+    
+    <link rel="stylesheet" href="../../styles/style.css" />
+</head>
+    
+<body>
+    <header>
+        <h1>Car Rental</h1>
+        <img src="../../images/logo.png" alt="Car Rental" style="width:150px;height:150px;">
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="../index.html" >Main Page</a></li>
+            <li><a href="customers-list.html" class="active">Customers</a></li>
+            <li><a href="../cars/cars-list.html" >Cars</a></li>
+            <li><a href="../rental/rental-list.html">Rentals</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h2>Customer Details</h2>
+        
+        <form class="form">
+            <label for="name">Name:</label>
+            <input type="text" name="name" value="Brad" id="name" disabled />
+            
+            <label for="surname">Surname:</label>
+            <input type="text" name="surname" value="Pitt" id="surname" disabled />
+            
+            <label for="address">Adress:</label>
+            <input type="text" name="address" value="Adress1" id="address" disabled />
+        
+            <label for="email">Email:</label>
+            <input type="text" name="email" value="example@domain.com" id="email" disabled/>
+            
+            <div>
+                <p><a class="list-actions-button-edit" href="customers-form-edit.html">Edit</a></p>
+            </div>
+        </form>
+        
+        <h2>Detail Of Rental</h2>
+        
+        <table class="table-list">
+            <thead>
+                <tr>
+                    <th>Car</th>
+                    <th>Shipping address</th>
+                    <th>Date out</th>
+                    <th>Date back</th>
+                </tr>
+            </thead>
+    
+            <tbody>
+                <tr>
+                    <td>Renault Captur</td>
+                    <td>Adress1</td>
+                    <td>01.01.2019</td>
+                    <td>30.02.2019</td>
+                </tr>
+                <tr>
+                    <td>Audi A3</td>
+                    <td>Adress2</td>
+                    <td>11.08.2020</td>
+                    <td>25.10.2020</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div>
+            <p><a class="list-actions-button-details" href="customers-list.html">Return</a></p>    
+        </div>
+        
+    </main>
+    
+    <footer>
+        <div>
+            <ul>
+                <ul> Miraç Gülbeyaz, s23239</ul>
+            </ul>
+        </div>
+    
+    </footer>
+</body>
+    
+</html>
